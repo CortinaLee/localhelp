@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex,nofollow" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LocalHelp Online</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/w3schools.css" rel="stylesheet" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <style type="text/css"></style>
+    </head>
+    <body>
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <div class="topnav" id="myTopnav">
+                    <a class="navbar-brand" href="index.html"
+                        >LocalHelp Online</a
+                    >
+                    <a href="index.html"
+                        ><i class="fa fa-fw fa-home"></i> Home</a
+                    >
+                    <a href="findhelp.html" class="fa fa-handshake-o">
+                        Find Help</a
+                    >
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="fa fa-heart-o"> Volunteer</i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="https://caringforfriends.org/"
+                                >Local Volunteer</a
+                            >
+                            <a href="https://tinyurl.com/4kmd5cbf"
+                                >City Volunteer</a
+                            >
+                            <a href="https://www.volunteer.gov/s/"
+                                >State Volunteer</a
+                            >
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="fa fa-group"> Community</i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="community.html">Local Community</a>
+                            <a href="https://www.philafound.org/"
+                                >City Community</a
+                            >
+                            <a href="https://tinyurl.com/2dtpbbkm"
+                                >State Community</a
+                            >
+                        </div>
+                    </div>
+                    <a class="active" href="myapplication.html"
+                        ><i class="fa fa-address-card-o"></i> My Application</a
+                    >
+
+                    <a
+                        href="javascript:void(0);"
+                        class="icon"
+                        onclick="myFunction()"
+                        >&#9776;</a
+                    >
+                    <form role="search" id="form">
+                        <input
+                            type="search"
+                            id="query"
+                            name="q"
+                            placeholder=" Search "
+                            aria-label="Search through site content"
+                        />
+                        <button_search>
+                            <svg viewBox="0 0 1024 1024">
+                                <path
+                                    class="path1"
+                                    d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"
+                                ></path>
+                            </svg>
+                        </button_search>
+                    </form>
+                    <script>
+                        const f = document.getElementById("form");
+                        const q = document.getElementById("query");
+                        const google =
+                            "https://www.google.com/search?q=site%3A+";
+                        const site = "localhelp.online";
+
+                        function submitted(event) {
+                            event.preventDefault();
+                            const url = google + site + "+" + q.value;
+                            const win = window.open(url, "_blank");
+                            win.focus();
+                        }
+                        f.addEventListener("submit", submitted);
+                    </script>
+                </div>
+            </header>
+            <!-- Hero Section -->
+            <section class="intro">
+                <div class="column">
+                    <h2>Connecting Neighbors Through Volunteer Service</h2>
+                    <p>
+                        Thank you for visiting LocalHelp Online! If you need
+                        assistance or wish to volunteer, you have come to the
+                        correct place. We can assist you in locating the
+                        services you require in the local community. There are
+                        numerous inventive methods to assist the community. This
+                        website can identify the proper placement for you, so
+                        all you have to do is choose whether to volunteer or
+                        need help.
+                    </p>
+                    <p>
+                        Become a community role model by filling out an
+                        application for LocalHelp Online, and we will connect
+                        you with the appropriate local services. You can also
+                        search our numerous community volunteer opportunities.
+                    </p>
+                    <button type="button" class="btn btn-info btn-md">
+                        I Need Help
+                    </button>
+                    <button type="button" class="btn btn-success btn-md">
+                        I Want to Volunteer
+                    </button>
+                </div>
+                <div class="column">
+                    <div class="w3-content w3-section" style="max-width:325px">
+                      <img class="mySlides w3-animate-fading" src="images/community_volunteer.jpeg" style="width:100%">
+                      <img class="mySlides w3-animate-fading" src="images/community9.jpeg" style="width:100%">
+                      <img class="mySlides w3-animate-fading" src="images/community_3.jpeg" style="width:100%">
+                      <img class="mySlides w3-animate-fading" src="images/community_people2.jpeg" style="width:100%">
+                      <img class="mySlides w3-animate-fading" src="images/community_7.jpeg" style="width:100%">
+                      <img class="mySlides w3-animate-fading" src="images/community_people3.jpeg" style="width:100%">
+                      <img class="mySlides w3-animate-fading" src="images/community.jpeg" style="width:100%">
+
+                    </div>
+
+                    <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}
+                      x[myIndex-1].style.display = "block";
+                      setTimeout(carousel, 9000);
+                    }
+                    </script>
+                </div>
+            </section>
+            <!-- Stats Gallery Section -->
+            <div class="gallery">
+                <div class="thumbnail">
+                    <a href="#"
+                        ><img
+                            src="images/walking_dog.jpeg"
+                            alt=""
+                            width="2000"
+                            class="cards"
+                    /></a>
+                    <h4>CHRISTINA</h4>
+                    <p class="tag">Walks Dogs Paints Cooks</p>
+                    <p class="text_column">
+                        Likes being outside, cooking, and dogs. She will walk
+                        your dog and help you cook if you need it. Likes to help
+                        paint too.
+                    </p>
+                </div>
+                <div class="thumbnail">
+                    <a href="#"
+                        ><img
+                            src="images/cooking.jpeg"
+                            alt=""
+                            width="2000"
+                            class="cards"
+                    /></a>
+                    <h4>DORTHY</h4>
+                    <p class="tag">Paint Cooks Walks Dogs</p>
+                    <p class="text_column">
+                        Likes being outside, cooking, and dogs. She will walk
+                        your dog and help you cook if you need it. Likes to help
+                        paint too.
+                    </p>
+                </div>
+                <div class="thumbnail">
+                    <a href="#"
+                        ><img
+                            src="images/gardening.jpeg"
+                            alt=""
+                            width="2000"
+                            class="cards"
+                    /></a>
+                    <h4>ABIGAIL</h4>
+                    <p class="tag">Gardner Tutor Chef</p>
+                    <p class="text_column">
+                        Helps people learn how to garden and cook. Tutor if you
+                        need help with your math. If you need help to mow the
+                        yard, I am the one.
+                    </p>
+                </div>
+                <div class="thumbnail">
+                    <a href="#"
+                        ><img
+                            src="images/driving.jpeg"
+                            alt=""
+                            width="2000"
+                            class="cards"
+                    /></a>
+                    <h4>JENNIFER</h4>
+                    <p class="tag">Groceries Errands Carpool</p>
+                    <p class="text_column">
+                        If you need someone to pick up your groceries, a ride, a
+                        carpool, or just someone to run tasks for you, I am
+                        happy to help.&nbsp;
+                    </p>
+                </div>
+            </div>
+            <!-- Bottom Gallery You can include another gallery section.
+            Just copy and paste the gallery class -->
+
+            <!-- Footer Section -->
+            <footer id="contact">
+                <p class="hero_header">VOLUNTEER WITH US</p>
+                <div class="button">
+                    <a href="mailto:info@localhelp.online" class="contact">
+                        Contact Us</a
+                    >
+            </footer>
+            <!-- Copyrights Section -->
+            <div class="copyright">
+                &copy;2025 - <strong>LocalHelp Online</strong>
+            </div>
+        </div>
+        <!-- Main Container Ends -->
+        <!-- Toggle between adding and removing the "responsive" class to topnav
+        when the user clicks on the icon -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
